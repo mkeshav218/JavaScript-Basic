@@ -49,6 +49,9 @@ Initialisation process: var
 *) Illegal Shadowing :- If we try to shadow a let variable inside a block using var, it is illegal Shadowing.It will throw SyntaxError.
 
 *) Closure :- Function along its lexical scope forms Closure.
+
+        Every funtion in JS has access to its outer lexical environment, i.e access to variables & function which is present in environment of its parent. When these function is executed in from other scope, not from its original scope where it is defined, it still remembers outer lexical environment where it is originally present in the code.
+        
         function x(){
                 var a = 7;
                 function y(){
@@ -69,3 +72,7 @@ iv) Memoize
 v) Maintaining state in async World
 vi) SetTimeouts
 vii) Iterators
+
+
+Disadvantage :-
+i) OverConsumption of memory
