@@ -1,0 +1,20 @@
+*) Everything in JavaScript happens inside an "Execution Context".
+It has 2 components :-
+i)Memory component(Variable Environment) :- All the variables & functions are stored as a key-value pair.
+ii)Code component(Thread of execution) :- Place where code is executed one line at a time.
+
+JavaScript is a synchronous single-threaded language(i.e it can execute only one command at a time).
+
+When a js program is executed, an "Execution Context" is created.
+i) Memory-Creation-Phase :- JS allocates memory to variables & functions. Variables are initialized with "undefined" whereas funtions are initialized with the body of functions(i.e whole code is copied to the memory space).
+
+ii) Code-Execution-Phase :- Code is executed line by line. When a function is invoked/called, a new "Execution Context" is created inside Code-Execution-Phase. Once the function execution completed, this newly created "Execution Context" will be deleted.
+
+Whenever an Execution-Context is created, it is pushed into call-stack, & when it is deleted, it is removed from the call-stack.Once the whole code is executed, call-stack becomes empty.
+
+Call Stack is also known as :-
+*) Execution-Context stack
+*) Program stack
+*) Control stack
+*) Runtime stack
+*) Machine stack
