@@ -1,0 +1,56 @@
+Anonumous function :-
+
+  		 function(){
+			console.log('Hello')
+		 }
+		 
+		 Function without a name. 
+		 It is used where function are treated as values.
+
+
+Function Statement/ Function Declaration  :-
+	Function created using naming convention.
+	function a(){
+		console.log('a called')
+	}
+	
+Function Expression :-
+	When a function is assigned to a variable.
+	
+	var b = function(){
+		console.log('b called')
+	}
+	
+	b is initialized with undefined & later on given function will be assigned as a value to the variable.
+	
+Named Function Expression :-
+	
+	var b = function xyz(){
+		console.log(xyz)
+	}
+	
+	
+Paremeters vs Arguments :-
+ 	function x(param1,param2){
+ 	
+ 	}
+ 	
+ 	x(arg1,arg2);
+ 	Values passed to a function is called as arguments.
+ 	
+ 	
+First Class Function/ First Class Citizens :- The ability to use function as values and which can be passed as arguments  to another function, and also can be returned from functions.
+	
+Callback functions :- Functions that are passed as an argument to another function.
+
+Why do we need to remove eventlisteners ?
+    Eventlisteners consume a lot of memory which can potentially slows down the website therefore it is a good practice to remove if it is not used.
+
+All the callback functions which comes through promises, will go inside microtask queue.
+Mutation observer.
+
+Other cb functions which comes through setTimeout,dom apis like eventlisteners, goes inside Callback queue.
+
+Event-loop continuously observes call stack & when it is empty it transfers task to call stack.
+Microtask Queue has higher priority than Callback queue.
+Too many generated micro tasks can cause starvation.
