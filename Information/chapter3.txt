@@ -1,0 +1,21 @@
+astexplorer.net
+
+JIT(Just In Time) compilation :- Use both interpretter & compiler.
+
+Mark & Sweep Algorithm :- 
+
+JS runtime environment contains all elements required to run JS.
+It contains JS engine, set of APIs, callback queue, microtask queue, event loop.
+JS engine is a piece of code.
+Process includes :- Code --> Parsing --> Compilation --> Execution.
+Parsing breaks code into tokens and converts it into AST(Abstract Syntax Tree).
+Modern JS engine follows JIT compilation, It interprets while it optimises code as much as it can.
+Execution & Compilation are done together.
+Execution has garbage collector and other optimization such as inlining,copy elusion,inline catching etc.
+
+*) Higher Order function :- Function that can take function as an parameter & can return a function;
+*) Callback function :- Functions which are passed as an parameter to Higher Order function.
+
+*) map method is used when we want transformation of whole array.
+*) filter is used when we want to filter the array to obtain required value.
+*) reduce is used when we want to reduce to array to single value.(e.g max,min,avg,sum,difference etc)
